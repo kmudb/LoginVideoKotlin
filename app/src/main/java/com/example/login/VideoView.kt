@@ -13,8 +13,8 @@ class VideoView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video_view);
-        var fragment = layoutInflater.inflate(R.layout.activity_video_view,,false)
-        videoView=fragment.findViewById(R.id.videoView1)
+        //var fragment = layoutInflater.inflate(R.layout.activity_video_view,,false)
+        videoView=findViewById<VideoView>(R.id.videoView1)
 
 
         val mediaController= MediaController(this)
