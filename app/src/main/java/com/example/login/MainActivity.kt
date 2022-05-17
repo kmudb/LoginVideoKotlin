@@ -28,7 +28,9 @@ class MainActivity : AppCompatActivity() {
             val user_name = et_user_name.text;
             val password = et_password.text;
             Toast.makeText(this@MainActivity, user_name, Toast.LENGTH_LONG).show()
-
+            val intent = Intent(this, VideoView::class.java)
+            // start your next activity
+            startActivity(intent)
         }
     }
 }
